@@ -38,7 +38,14 @@ Collegherai ogni sezione della pagina agli elementi del menu corrispondenti.
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <div class="navbar-brand">
+          <a href="#">
+            <img
+              src="https://seeklogo.com/images/E/Evelin_R_travel_agency-logo-8B607D6C80-seeklogo.com.png"
+              alt=""
+              height="40"
+          /></a>
+        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -86,7 +93,9 @@ Il background della sezione sarà grigio chiaro e con bordi arrotondati e del pa
     <div class="container">
       <div class="bg-light mt-5 p-5 rounded-3">
         <div class="d-flex w-100 pb-3 border-bottom">
-          <div class="display-3">Eveline-R <span class="blockquote">-- Feel the freedom</span></div>
+          <div class="d-flex align-items-center display-3">
+            Eveline-R <span class="blockquote mb-0">-- Feel the freedom</span>
+          </div>
         </div>
         <div class="pt-3">
           <em>Scopri le destinazioni più calde del momento!</em>
@@ -107,9 +116,19 @@ le card avranno un bordo di 2px azzurro chiaro, il bottone azzurro chiaro e test
       <div class="my-5">
         <div class="d-flex">
           <h3 class="me-auto mb-3" id="Saldi">Saldi</h3>
-          <button type="button" class="btn text-info">Nascondi sezione</button>
+          <button
+            type="button"
+            class="btn text-info mb-2"
+            data-bs-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Nascondi sezione
+          </button>
         </div>
-        <div class="row row-gap-3">
+        <div class="row row-gap-3 collapse collapse" id="collapseExample">
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="card border-2 border-info">
               <img
@@ -193,17 +212,29 @@ In questa sezione dovranno esserci:
 
       <div class="my-5">
         <div class="d-flex">
-          <h3 class="me-auto mb-3" id="#Welcome-Summer">Welcome Summer</h3>
-          <button type="button" class="btn text-info">Nascondi sezione</button>
+          <h3 class="me-auto mb-3" id="Welcome-Summer">Welcome Summer</h3>
+          <button
+            type="button"
+            class="btn text-info mb-2"
+            data-bs-toggle="collapse"
+            href="#collapseExample2"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Nascondi sezione
+          </button>
         </div>
-        <div class="row row-gap-4">
+        <div class="row row-gap-4 collapse collapse" id="collapseExample2">
           <div class="col-md-6 col-lg-4 col-xl-2">
-            <div class="card border-0 shadow-lg bg-body-tertiary rounded-0">
+            <div class="card border-0 shadow-lg bg-body-tertiary rounded-0 position-relative">
               <img
                 src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1421&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 class="card-img-top rounded-0"
                 alt="..."
               />
+              <span class="position-absolute m-2 end-0 badge bg-danger">HOT</span>
+
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -221,6 +252,7 @@ In questa sezione dovranno esserci:
                 class="card-img-top rounded-0"
                 alt="..."
               />
+              <span class="position-absolute m-2 end-0 badge bg-danger">HOT</span>
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -238,6 +270,7 @@ In questa sezione dovranno esserci:
                 class="card-img-top rounded-0"
                 alt="..."
               />
+              <span class="position-absolute m-2 end-0 badge bg-danger">HOT</span>
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -255,6 +288,7 @@ In questa sezione dovranno esserci:
                 class="card-img-top rounded-0"
                 alt="..."
               />
+              <span class="position-absolute m-2 end-0 badge bg-danger">HOT</span>
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -272,6 +306,7 @@ In questa sezione dovranno esserci:
                 class="card-img-top rounded-0"
                 alt="..."
               />
+              <span class="position-absolute m-2 end-0 badge bg-danger">HOT</span>
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -289,6 +324,7 @@ In questa sezione dovranno esserci:
                 class="card-img-top rounded-0"
                 alt="..."
               />
+              <span class="position-absolute m-2 end-0 badge bg-danger">HOT</span>
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -316,7 +352,7 @@ e il badge sarà scuro -->
       <!-- 7) Rendi invisibile la sezione "Offerta del giorno" su schermi piccoli. -->
 
       <div class="my-5 d-sm-none d-md-block">
-        <h3 class="me-auto mb-3">Offerta del giorno</h3>
+        <h3 class="me-auto mb-3" id="Last-Minute">Offerta del giorno</h3>
         <div class="row">
           <div class="col-7">
             <img
@@ -338,42 +374,42 @@ e il badge sarà scuro -->
       <div class="my-5">
         <h3 class="me-auto mb-3">Last minute</h3>
         <div class="row row-gap-3">
-          <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="col-6 col-md-4 col-lg-3 col-xl-2 col-2">
             <img
               class="object-fit-cover border rounded shadow w-100"
               src="https://images.unsplash.com/photo-1543369715-eb5ecb1a4bf0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
           </div>
-          <div class="col-6 col-md-4 col-lg-3 col-xl-2col-2">
+          <div class="col-6 col-md-4 col-lg-3 col-xl-2 col-2">
             <img
               class="object-fit-cover border rounded shadow w-100"
               src="https://images.unsplash.com/photo-1543369715-eb5ecb1a4bf0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
           </div>
-          <div class="col-6 col-md-4 col-lg-3 col-xl-2col-2">
+          <div class="col-6 col-md-4 col-lg-3 col-xl-2 col-2">
             <img
               class="object-fit-cover border rounded shadow w-100"
               src="https://images.unsplash.com/photo-1543369715-eb5ecb1a4bf0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
           </div>
-          <div class="col-6 col-md-4 col-lg-3 col-xl-2col-2">
+          <div class="col-6 col-md-4 col-lg-3 col-xl-2 col-2">
             <img
               class="object-fit-cover border rounded shadow w-100"
               src="https://images.unsplash.com/photo-1543369715-eb5ecb1a4bf0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
           </div>
-          <div class="col-6 col-md-4 col-lg-3 col-xl-2col-2">
+          <div class="col-6 col-md-4 d-lg-none d-xl-flex col-xl-2 col-2">
             <img
               class="object-fit-cover border rounded shadow w-100"
               src="https://images.unsplash.com/photo-1543369715-eb5ecb1a4bf0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
           </div>
-          <div class="col-6 col-md-4 col-lg-3 col-xl-2col-2">
+          <div class="col-6 col-md-4 d-lg-none d-xl-flex col-xl-2 col-2">
             <img
               class="object-fit-cover border rounded shadow w-100"
               src="https://images.unsplash.com/photo-1543369715-eb5ecb1a4bf0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -386,21 +422,61 @@ e il badge sarà scuro -->
       <!-- 10) Crea una sezione "Recensioni", dove l'utente potrà trovare alcuni feedback da utenti fittizi. 
 Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recensione a destra -->
       <div class="my-5">
-        <h3 class="me-auto mb-3 text-center">Dicono di noi</h3>
-        <div class="d-flex align-items-center">
-          <div class="overflow-hidden rounded-circle" style="height: 100px">
+        <h3 class="me-auto mb-3 text-center" id="Recensioni">Dicono di noi</h3>
+        <div class="d-flex">
+          <div class="overflow-hidden rounded-circle border border-info" style="width: 100px; height: 100px">
             <img
               class="object-fit-cover w-100 h-100"
               src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D"
               alt=""
             />
           </div>
-          <div class="ms-2">
+          <div class="ms-5 w-100">
             <h5>Username</h5>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempore fugit omnis dolorem facere repellat
-              voluptatem quia architecto, placeat temporibus, obcaecati nemo voluptates similique, sit quis aspernatur
-              assumenda enim sapiente.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima molestias nam perferendis magni qui
+              cupiditate cum voluptate quaerat aut, illum vitae unde ullam expedita corrupti ex impedit! Assumenda,
+              magni ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima molestias nam perferendis magni
+              qui cupiditate cum voluptate quaerat aut, illum vitae unde ullam expedita corrupti ex impedit! Assumenda,
+              magni ad?
+            </p>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="overflow-hidden rounded-circle border border-info" style="width: 100px; height: 100px">
+            <img
+              class="object-fit-cover w-100 h-100"
+              src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D"
+              alt=""
+            />
+          </div>
+          <div class="ms-5 w-100">
+            <h5>Username</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima molestias nam perferendis magni qui
+              cupiditate cum voluptate quaerat aut, illum vitae unde ullam expedita corrupti ex impedit! Assumenda,
+              magni ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima molestias nam perferendis magni
+              qui cupiditate cum voluptate quaerat aut, illum vitae unde ullam expedita corrupti ex impedit! Assumenda,
+              magni ad?
+            </p>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="overflow-hidden rounded-circle border border-info" style="width: 100px; height: 100px">
+            <img
+              class="object-fit-cover w-100 h-100"
+              src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D"
+              alt=""
+            />
+          </div>
+          <div class="w-100 ms-5">
+            <h5>Username</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima molestias nam perferendis magni qui
+              cupiditate cum voluptate quaerat aut, illum vitae unde ullam expedita corrupti ex impedit! Assumenda,
+              magni ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima molestias nam perferendis magni
+              qui cupiditate cum voluptate quaerat aut, illum vitae unde ullam expedita corrupti ex impedit! Assumenda,
+              magni ad?
             </p>
           </div>
         </div>
@@ -408,10 +484,18 @@ Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recension
 
       <!-- 11) Crea un footer con le informazioni dell'agenzia e un bottone "Contattaci".-->
     </div>
-
-    <!-- EXTRAS -->
+    <footer class="bg-dark text-center m-0">
+      <div class="container-fluid py-5">
+        <button type="button" class="btn btn-outline-secondary">Contattaci</button>
+        <p class="text-white pt-4">&copy; 2021 Kalina Travel LTD. All Righs Reserved.</p>
+      </div>
+    </footer>
 
     <!-- 12) Crea un bottone vicino ad ogni sezione per collassarla e riaprirla se premuto. -->
+
+    <!-- 16) Crea una funzione che aggiunga un badge con la scritta "HOT" su ognuna delle offerte "Welcome Summer" posizionato in alto a destra. -->
+
+    <!-- EXTRAS -->
 
     <!-- 13) Crea la possibilità di contare il numero di "viaggi" presenti sulla pagina e visualizzare il risultato in un alert. -->
 
@@ -419,11 +503,8 @@ Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recension
 
     <!-- 15) Quando l'utente cliccherà su "Contattaci", il modale dovrà essere visualizzato. -->
 
-    <!-- 16) Crea una funzione che aggiunga un badge con la scritta "HOT" su ognuna delle offerte "Welcome Summer" posizionato in alto a destra. -->
-
     <!-- 17) Crea una funzione che rimuova tutte le "card" dalla pagina -->
 
-    D
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
