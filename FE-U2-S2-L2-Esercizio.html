@@ -486,7 +486,33 @@ Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recension
     </div>
     <footer class="bg-dark text-center m-0">
       <div class="container-fluid py-5">
-        <button type="button" class="btn btn-outline-secondary">Contattaci</button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-secondary">
+          Contattaci
+        </button>
+        <div class="modal" id="exampleModal" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Inserisci qui la tua mail!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Inserisci qui la tua mail"
+                    aria-label="Search"
+                  />
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Esci</button>
+                <button type="submit" class="btn btn-primary">Iscriviti</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <p class="text-white pt-4">&copy; 2021 Kalina Travel LTD. All Righs Reserved.</p>
       </div>
     </footer>
@@ -495,13 +521,13 @@ Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recension
 
     <!-- 16) Crea una funzione che aggiunga un badge con la scritta "HOT" su ognuna delle offerte "Welcome Summer" posizionato in alto a destra. -->
 
-    <!-- EXTRAS -->
-
-    <!-- 13) Crea la possibilità di contare il numero di "viaggi" presenti sulla pagina e visualizzare il risultato in un alert. -->
-
     <!-- 14) Crea un modale con un campo email e un messaggio. -->
 
     <!-- 15) Quando l'utente cliccherà su "Contattaci", il modale dovrà essere visualizzato. -->
+
+    <!-- EXTRAS -->
+
+    <!-- 13) Crea la possibilità di contare il numero di "viaggi" presenti sulla pagina e visualizzare il risultato in un alert. -->
 
     <!-- 17) Crea una funzione che rimuova tutte le "card" dalla pagina -->
 
